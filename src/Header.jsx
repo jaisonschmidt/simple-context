@@ -3,9 +3,9 @@ import React, { useContext } from "react";
 import { UserContext } from "./provider/UserProvider";
 
 export const Header = () => {
-    const usuario = useContext(UserContext);
+    const [userCtx] = useContext(UserContext);
 
     return (
-        <h1>{usuario}</h1>
+        <h1>{userCtx}</h1>
     )
 };
